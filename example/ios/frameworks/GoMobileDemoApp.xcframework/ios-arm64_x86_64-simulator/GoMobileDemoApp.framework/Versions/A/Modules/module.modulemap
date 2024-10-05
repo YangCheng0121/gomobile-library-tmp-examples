@@ -1,8 +1,0 @@
-framework module "GoMobileDemoApp" {
-	header "ref.h"
-    header "Support.objc.h"
-    header "Universe.objc.h"
-    header "GoMobileDemoApp.h"
-
-    export *
-}

@@ -20,7 +20,7 @@ func NewSupport() *Support {
 }
 
 func (s *Support) Echo() *Support {
-	fmt.Println("Init Support Library")
+	fmt.Println("Init Support Library 杨程")
 	return s
 }
 
