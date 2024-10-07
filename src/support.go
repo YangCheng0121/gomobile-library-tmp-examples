@@ -6,6 +6,7 @@
 package support
 
 import "fmt"
+import v2core "github.com/xtls/xray-core/core"
 
 type SupportObserve interface {
 	OnCallback(code int, msg string)
@@ -37,4 +38,13 @@ func (s *Support) Call(name string) *Support {
 func (s *Support) SetObserve(o SupportObserve) *Support {
 	s.observe = o
 	return s
+}
+
+/*
+CheckVersionX string
+This func will return libv2ray binding version and V2Ray version used.
+*/
+func CheckVersionX() string {
+	var version = 27
+	return fmt.Sprintf("Lib v%d, Xray-core v%s", version, v2core.Version())
 }

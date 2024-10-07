@@ -1,11 +1,18 @@
 module goMobileSupport
 
-go 1.18
+go 1.22.0
+
+toolchain go1.23.1
+
+require github.com/xtls/xray-core v1.8.24
 
 require (
-	golang.org/x/mobile v0.0.0-20220518205345-8578da9835fd // indirect
-	golang.org/x/mod v0.4.2 // indirect
-	golang.org/x/sys v0.0.0-20210809222454-d867a43fc93e // indirect
-	golang.org/x/tools v0.1.8-0.20211022200916-316ba0b74098 // indirect
-	golang.org/x/xerrors v0.0.0-20200804184101-5ec99f83aff1 // indirect
+	github.com/pires/go-proxyproto v0.7.0 // indirect
+	github.com/sagernet/sing v0.4.1 // indirect
+	golang.org/x/mobile v0.0.0-20241004191011-08a83c5af9f8 // indirect
+	golang.org/x/mod v0.21.0 // indirect
+	golang.org/x/sync v0.8.0 // indirect
+	golang.org/x/sys v0.26.0 // indirect
+	golang.org/x/tools v0.26.0 // indirect
+	google.golang.org/protobuf v1.34.2 // indirect
 )
